@@ -2,37 +2,84 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #4e0beb;
+}
+
+.userDetails {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.userDetails > p {
+  margin-right: 10px;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userDetails > img {
+  border-radius: 50%;
+}
+
+.userDetails > button {
+  margin-left: 10px;
+}
+
+.links > .home, .login, .posts{
+  margin: 10px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.forms {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.postContents {
+  background-color: #4000d4a4;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.postContents > .title, .desc {
+  padding: 10px 10px 10px 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.postContents > .submitBtn {
+  padding: 8px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+} 
+
+.postContents > .submitBtn:hover {
+  background-color: rgba(0, 0, 0, 0.829);
+  cursor: pointer;
+}
+
+.mainContents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postTitle {
+  text-decoration: underline;
 }
